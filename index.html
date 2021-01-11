@@ -1,0 +1,39 @@
+<html lang="pt-br">
+    <head>
+        <title>Texto para Linguagem Natural</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="scripts.js"></script>
+        
+    </head>
+    <body>
+        <div class="geral">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="left">
+                        <form>
+                            <div class="form-group">
+                              <h4>Digite uma frase</h4>
+                              <textarea class="form-control" id="inputComent" rows="5" maxlength="255" placeholder="Escreva uma frase até 255 caracteres."></textarea>
+                              <span id="counter" class="rodape-text">Caracteres restantes: 255</span><br>
+                              <button id="buttonAdd" type="reset" class="btn btn-primary">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div id="coments" class="right">
+                        <h4>Frases</h4>
+                    </div>
+                </div>  
+                <audio hidden>
+                    <source id="source" src="" type="audio/wav">
+                </audio> 
+            </div>        
+        </div>
+    </body>
+</html>
